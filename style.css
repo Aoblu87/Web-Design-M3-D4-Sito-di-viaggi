@@ -1,7 +1,7 @@
 /* rendere lo scroll della pagina più morbido quando si seleziona link della navbar */
 html {
     scroll-behavior: smooth;
-    scroll-padding-top: 200px;
+    scroll-padding-top: 100px;
 
 }
 body{
@@ -9,11 +9,20 @@ body{
 }
 
 /* jumbotron */
+#home{
+background-image: url(assets/jumbotron.jpeg);
+background-repeat: no-repeat;
+background-size: cover;
+}
 
+#home img{
+    backdrop-filter: blur(10px);
+    opacity: 0.5;
+
+}
 #home>div {
     position: absolute;
-    top: 15%;
-    left: 30%;
+    padding: 5% 0 0 35%;
     
 } 
 
