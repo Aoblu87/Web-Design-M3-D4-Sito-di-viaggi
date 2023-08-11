@@ -8,12 +8,22 @@ html {
 body {
     padding-top: 4%;
 }
+h1, h2, h3{
+    color: rgb(89, 87, 94);
+}
+/* --------------NAVBAR ----------------------------------*/
+.navbar{
+    background-color: rgb(206, 204, 203);
+}
+/* ------------jumbotron------------------------ */
 
-/* jumbotron */
+#home{
+    background-color: rgba(201, 211, 231);
+}
 
-
-
-
+/* #img-jumbo{
+    box-shadow: 2px 2px 17px 10px #C9D3E7;
+} */
 
 #home>div{
     position: absolute;
@@ -39,14 +49,17 @@ body {
 
 #testimonials-img{
     border: solid 8px;
-    border-color: rgb(105, 81, 72);
+    border-color: rgb(89, 87, 94);
     margin: 2% 0 5% 0;
 }
 
 
 #testimonials{
-    background-color: rgb(156, 147, 127);
+    background-color:rgb(206, 204, 203);
 }
+
+
+/* ---------------FOOTER-------- */
    
 footer>div{
     background-color: rgb(105, 81, 72);
