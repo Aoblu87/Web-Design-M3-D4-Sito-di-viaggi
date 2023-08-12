@@ -66,5 +66,10 @@ h1, h2, h3{
 /* ---------------FOOTER-------- */
    
 footer>div{
-    background-color: rgb(105, 81, 72);
+    background-color:#a4cbd1;
 }
+
+/* .modal-body .form-row:last-child div:last-child {
+   background-color: red;
+   height: 20vw;
+} */
