@@ -1,6 +1,6 @@
 /* --------------HIDDEN per collapsible section */
 .hidden{
-display: none;
+visibility:hidden;
 }
 
 
