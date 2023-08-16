@@ -14,6 +14,10 @@ const countResult = document.createElement('div')
 countButton.appendChild(countResult)
 // countResult.className = 'col-6'
 
+const contactButton= document.querySelector('#contact-button')
+const cancelButton = document.querySelector('#cancel')
+const dialog = document.querySelector('#contact-me')
+
 window.onload = function () {
 
 
@@ -38,34 +42,58 @@ window.onload = function () {
             }
         })
     }
-}
-
-//--------------Bottoni per rimuovere cards e per contarle--------
-
-//--------------ESERCIZIO 2 RIMUOVI CARDS
-
-for (const button of removeButton) {
-
-    button.addEventListener('click', function (event) {
-
-        for (const card of cards) {
-            card.remove()
-        }
-
-    })
-
-}
-
-//------------ESERCIZIO 5 CONTA CARDS
-
-
+    
+    //--------------Bottoni per rimuovere cards e per contarle--------
+    
+    //--------------ESERCIZIO 2 RIMUOVI CARDS
+    
+    for (const button of removeButton) {
+        
+        button.addEventListener('click', function (event) {
+            
+            for (const card of cards) {
+                card.remove()
+            }
+            
+        })
+        
+    }
+    
+    //------------ESERCIZIO 5 CONTA CARDS
+    
+    
     countButton.addEventListener('click', function (event) {
         let countCards=0
         for (const card of cards){
             countCards ++
         }
         countResult.innerHTML = countCards
-
+        
     }
     )
+    
 
+    
+//---------SHOW MODAL()-----------
+
+contactButton.addEventListener('click', function (event){
+dialog.showModal()
+
+}
+)
+
+//-------Close Modal-----------
+
+cancelButton.addEventListener('click', function (event){
+
+    dialog.close()
+}
+
+)
+
+
+
+
+
+
+}
