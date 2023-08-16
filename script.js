@@ -1,22 +1,23 @@
-window.onload=function(){
+window.onload = function () {
 
 
 
 
 
-const summerButton= document.querySelector('button[aria-controls=summer-content]')
+    const summerButton = document.querySelectorAll('.collapsible')
+    const summerCards = document.querySelector('#welcome-summer >div:last-child')
 
-for () {
+    for (button of summerButton) {
 
-    button.addEventListeners ('click', function (event){
+        button.addEventListener('click', function (event) {
 
-        alert('hello')
+                summerCards.style.display = 'none'
+           
 
 
+        })
 
-    })
-    
-}
+    }
 
 
 
