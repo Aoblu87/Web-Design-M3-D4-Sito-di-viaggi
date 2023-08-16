@@ -1,3 +1,9 @@
+/* --------------HIDDEN per collapsible section */
+.hidden{
+display: none;
+}
+
+
 /* rendere lo scroll della pagina più morbido quando si seleziona link della navbar */
 html {
     scroll-behavior: smooth;

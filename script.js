@@ -1,3 +1,7 @@
+
+const summerCards = document.querySelector('#welcome-summer >div:last-child')
+// const cards= document.querySelectorAll('#welcome-summer>div:last-child .col-6')
+
 window.onload = function () {
 
 
@@ -11,7 +15,8 @@ window.onload = function () {
 
         button.addEventListener('click', function (event) {
 
-                summerCards.style.display = 'none'
+                // summerCards.classList.toggle('hidden')
+                summerCards.computedStyleMap.display='none'
            
 
 
