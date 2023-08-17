@@ -1,6 +1,6 @@
 /* --------------HIDDEN per collapsible section */
-.hidden{
-visibility:hidden;
+.hidden {
+    display: none;
 }
 
 
@@ -14,24 +14,29 @@ html {
 body {
     padding-top: 4%;
 }
-h1, h2, h3{
+
+h1,
+h2,
+h3 {
     color: rgb(89, 87, 94);
 }
+
 /* --------------NAVBAR ----------------------------------*/
-.navbar{
+.navbar {
     background-color: rgb(206, 204, 203);
 }
+
 /* ------------jumbotron------------------------ */
 
-#home{
+#home {
     background-color: rgba(201, 211, 231);
 }
 
-#img-jumbo{
+#img-jumbo {
     box-shadow: 2px 2px 17px 10px rgb(89, 87, 94);
 }
 
-#home>div{
+#home>div {
     position: absolute;
     padding: 5% 0 0 35%;
 
@@ -53,29 +58,29 @@ h1, h2, h3{
 
 /* --------------TESTIMONIALS */
 
-#testimonials-img{
+#testimonials-img {
     border: solid 8px;
     border-color: rgb(89, 87, 94);
     margin: 2% 0 5% 0;
 }
 
 
-#testimonials{
-    background-color:rgb(206, 204, 203);
+#testimonials {
+    background-color: rgb(206, 204, 203);
 }
 
-.carousel-indicators{
+.carousel-indicators {
     bottom: -45px;
 }
 
-#text-carousel{
+#text-carousel {
     width: 40em;
 }
 
 /* ---------------FOOTER-------- */
-   
-footer>div{
-    background-color:#a4cbd1;
+
+footer>div {
+    background-color: #a4cbd1;
 }
 
 /* .modal-body .form-row:last-child div:last-child {
