@@ -1,9 +1,4 @@
-body {
-    background: #A4CBD1;
-    background: -moz-linear-gradient(top, #A4CBD1 0%, #C9D2E7 50%, #CFCCCB 100%);
-    background: -webkit-linear-gradient(top, #A4CBD1 0%, #C9D2E7 50%, #CFCCCB 100%);
-    background: linear-gradient(to bottom, #A4CBD1 0%, #C9D2E7 50%, #CFCCCB 100%);
-    }
+
 
 /* --------------HIDDEN per collapsible section */
 .hidden {
@@ -28,6 +23,8 @@ h2,
 h3 {
     color: rgb(89, 87, 94);
 }
+
+
 
 /* --------------NAVBAR ----------------------------------*/
 .navbar {
