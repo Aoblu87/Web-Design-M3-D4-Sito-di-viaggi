@@ -9,6 +9,8 @@ const removeButton = document.querySelectorAll('.removeButton')
 const countButton = document.querySelector('#count')
 const cards = document.querySelectorAll('.collapse-section>div')
 
+const closeSection = document.querySelectors('.collapse-section>div')
+
 
 const countResult = document.createElement('div')
 countButton.appendChild(countResult)
@@ -34,11 +36,12 @@ window.onload = function () {
 
     for (const button of collapseButton) {
 
+
         button.addEventListener('click', function (event) {
 
-            for (const section of sections) {
+            for (const card of cards) {
                 // section.classList.toggle('.hidden')
-                section.style.display = 'none'
+                card.style.display = 'none'
             }
         })
     }
