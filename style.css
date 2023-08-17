@@ -1,6 +1,14 @@
+body {
+    background: #A4CBD1;
+    background: -moz-linear-gradient(top, #A4CBD1 0%, #C9D2E7 50%, #CFCCCB 100%);
+    background: -webkit-linear-gradient(top, #A4CBD1 0%, #C9D2E7 50%, #CFCCCB 100%);
+    background: linear-gradient(to bottom, #A4CBD1 0%, #C9D2E7 50%, #CFCCCB 100%);
+    }
+
 /* --------------HIDDEN per collapsible section */
 .hidden {
-    display: none;
+    /* display: none !important; */
+    visibility: hidden;
 }
 
 
@@ -29,7 +37,7 @@ h3 {
 /* ------------jumbotron------------------------ */
 
 #home {
-    background-color: rgba(201, 211, 231);
+    background-color: rgba(201, 211, 231,0);
 }
 
 #img-jumbo {

@@ -9,14 +9,13 @@ const removeButton = document.querySelectorAll('.removeButton')
 const countButton = document.querySelector('#count')
 const cards = document.querySelectorAll('.collapse-section>div')
 
-const closeSection = document.querySelectors('.collapse-section>div')
 
 
 const countResult = document.createElement('div')
 countButton.appendChild(countResult)
 // countResult.className = 'col-6'
 
-const contactButton= document.querySelector('#contact-button')
+const contactButton = document.querySelector('#contact-button')
 const cancelButton = document.querySelector('#cancel')
 const dialog = document.querySelector('#contact-me')
 
@@ -39,60 +38,62 @@ window.onload = function () {
 
         button.addEventListener('click', function (event) {
 
-            for (const card of cards) {
-                // section.classList.toggle('.hidden')
-                card.style.display = 'none'
+            for (const section of sections) {
+                section.style.display = 'none !important'
+
             }
+
+
         })
     }
-    
+
     //--------------Bottoni per rimuovere cards e per contarle--------
-    
+
     //--------------ESERCIZIO 2 RIMUOVI CARDS
-    
+
     for (const button of removeButton) {
-        
+
         button.addEventListener('click', function (event) {
-            
+
             for (const card of cards) {
                 card.remove()
             }
-            
+
         })
-        
+
     }
-    
+
     //------------ESERCIZIO 5 CONTA CARDS
-    
-    
+
+
     countButton.addEventListener('click', function (event) {
-        let countCards=0
-        for (const card of cards){
-            countCards ++
+        let countCards = 0
+        for (const card of cards) {
+            countCards++
         }
         countResult.innerHTML = countCards
-        
+
     }
     )
-    
 
-    
-//---------SHOW MODAL()-----------
 
-contactButton.addEventListener('click', function (event){
-dialog.showModal()
 
-}
-)
+    //---------SHOW MODAL()-----------
 
-//-------Close Modal-----------
+    contactButton.addEventListener('click', function (event) {
+        dialog.showModal()
 
-cancelButton.addEventListener('click', function (event){
+    }
+    )
 
-    dialog.close()
-}
+    //-------Close Modal-----------
 
-)
+    cancelButton.addEventListener('click', function (event) {
+
+        dialog.close()
+    }
+
+    )
 
 
 
