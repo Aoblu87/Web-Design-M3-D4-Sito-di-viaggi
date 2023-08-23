@@ -39,7 +39,7 @@ window.onload = function () {
         button.addEventListener('click', function (event) {
 
             for (const section of sections) {
-                section.style.display = 'none !important'
+                section.style.display = 'none'
 
             }
 
